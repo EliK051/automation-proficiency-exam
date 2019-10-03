@@ -9,6 +9,10 @@ class SelenuimInfra{
         this.driver = new Builder().forBrowser('chrome').build();
     }
 
+    // async attr(element,atr){
+    //     this.driver[element]getAttribute(atr)
+    // }
+
     async getURL(URL){ // Open browser
         await this.driver.get(URL)
     }
